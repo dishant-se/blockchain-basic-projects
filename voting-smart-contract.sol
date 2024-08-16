@@ -4,7 +4,6 @@ pragma solidity ^0.8.0;
 
 contract Vote {
 
-    //first entity
     struct Voter {
         string name;
         uint age;
@@ -14,7 +13,7 @@ contract Vote {
         address voterAddress;
     }
 
-    //second entity
+
     struct Candidate {
         string name;
         string party;
@@ -25,9 +24,8 @@ contract Vote {
         uint votes; //vote count
     }
 
-    //third entity
-    address public electionCommission;
 
+    address public electionCommission;
     address public winner;
     uint nextVoterId = 1;
     uint nextCandidateId = 1;
